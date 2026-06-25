@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K'epi - Inicio</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="misestilos_6.css">
+
+    <style>
+        html, body {
+            background-color: black !important;
+            color: white !important;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .logo-cabecera {
+            width: 85px !important;
+            height: auto !important;
+        }
+
+        .franja-superior {
+            width: 100% !important;
+            height: 40px !important;
+            display: block;
+            object-fit: fill;
+        }
+
+        .banner-contenedor {
+            position: relative;
+            width: 100% !important;
+            height: 400px !important; 
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        .banner-img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: center 30%; 
+            display: block;
+        }
+
+        .texto-welcome {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-20%, -20%);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4.5rem;
+            font-weight: normal;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+            margin: 0;
+            white-space: nowrap;
+            z-index: 2;
+        }
+
+        .seccion-inferior {
+            padding-top: 3.5rem;
+            padding-bottom: 4rem;
+        }
+
+        .titulo-talentazo-amarillo {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4.8rem;
+            font-weight: bold;
+            color: #f1ca1e; 
+            line-height: 0.9;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .texto-descripcion-inicio {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.5;
+            text-align: justify;
+            color: #ffffff;
+            max-width: 580px;
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .banner-contenedor {
+                height: 250px !important;
+            }
+            .texto-welcome {
+                font-size: 2.5rem;
+                transform: translate(-50%, -50%);
+            }
+            .titulo-talentazo-amarillo {
+                font-size: 3.2rem;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .texto-descripcion-inicio {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black pt-4 pb-2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/200.img.jpg" alt="K'epi" class="logo-cabecera">
+            </a>
+
+            <div class="ms-auto">
+                <ul class="navbar-nav flex-row gap-4 text-uppercase" style="letter-spacing: 2px; font-size: 0.85rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-white" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="arte.html">Arte en Bolivia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="contactos.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="imagenes/201.img.png" alt="Franja Tradicional" class="franja-superior">
+
+    <div class="banner-contenedor">
+        <img src="imagenes/100.jpg" alt="Montaña Illimani" class="banner-img">
+        <h2 class="texto-welcome">¡WELCOME!</h2>
+    </div>
+
+    <main class="container seccion-inferior">
+        <div class="row align-items-start justify-content-center">
+            
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <h1 class="titulo-talentazo-amarillo">
+                    TALENTAZO<br>BOLIVIANO
+                </h1>
+            </div>
+
+            <div class="col-lg-7 d-flex justify-content-lg-end">
+                <p class="texto-descripcion-inicio">
+                    Bolivia es un lienzo vivo de colores, texturas e historias que merecen ser contadas. En K'epi, cargamos el talento de nuestras regiones y lo mostramos al mundo. Descubre la riqueza de nuestra cultura a través de los ojos, pinceles y tabletas digitales de los creadores más destacados del país. Tu viaje por el arte boliviano comienza aquí.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
