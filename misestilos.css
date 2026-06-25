@@ -1,0 +1,83 @@
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.barra-roja {
+    background-color: #c8102e;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.pedro {
+    width: 500px;
+    height: auto;
+}
+
+.maria {
+    width: 500px;
+    height: auto;
+}
+
+.obra {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.obra2 {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.franja-img {
+    width: 100%;
+    height: 40px;
+}
+
+
+.titulo {
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.obra-grande {
+    width: 100%;
+    max-width: 450px;
+}
+
+.foto-artista {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.obra3 {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.boton {
+    background-color: #00e11a;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+}
+
+.rrosmery {
+    width: 300px;
+    height: auto;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K'epi - Artistas</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="misestilos_6.css">
+
+    <style>
+        html, body {
+            background-color: black !important;
+            color: white !important;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .logo-cabecera {
+            height: 55px;
+            width: auto;
+        }
+
+        .contenido-principal {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .seccion-visor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .visor-marco {
+            border: 2px solid #ffffff;
+            border-radius: 24px;
+            padding: 14px;
+            background-color: transparent;
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .visor-img {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            display: block;
+        }
+
+        .flecha-link {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .titulo-artistas-amarillo {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 4.2rem;
+            font-weight: bold;
+            color: #f1ca1e; 
+            line-height: 0.9;
+            margin-top: 1.5rem;
+            text-align: center;
+            letter-spacing: -1px;
+        }
+
+        .bloque-botones-derecho {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .btn-rojo-menu {
+            background-color: #b3191f !important;
+            color: white !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.4rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 1.2rem 1rem;
+            border-radius: 25px !important;
+            border: none !important;
+            text-align: center;
+            width: 100%;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-rojo-menu:hover {
+            background-color: #d12329 !important;
+        }
+
+        .footer-franja {
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .franja-img {
+            width: 100%;
+            height: 42px;
+            display: block;
+            object-fit: fill;
+        }
+
+        @media (max-width: 991px) {
+            .bloque-botones-derecho {
+                margin: 3rem auto 0 auto;
+            }
+            .titulo-artistas-amarillo {
+                font-size: 3rem;
+            }
+            .btn-rojo-menu {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black pt-4 pb-2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/200.img.jpg" alt="K'epi" class="logo-cabecera">
+            </a>
+
+            <div class="ms-auto">
+                <ul class="navbar-nav flex-row gap-4 text-uppercase" style="letter-spacing: 2px; font-size: 0.85rem;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="arte.html">Arte en Bolivia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-white" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="contactos.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contenido-principal container">
+        <div class="row w-100 align-items-center justify-content-center m-0">
+            
+            <div class="col-lg-6 p-0 d-flex flex-column align-items-center">
+                <div class="seccion-visor">
+                    <a href="#" class="flecha-link me-4" aria-label="Anterior">&lt;&lt;</a>
+                    
+                    <div class="visor-marco">
+                        <img src="imagenes/mamani.jpg" alt="Cristo de la Concordia" class="visor-img">
+                    </div>
+                    
+                    <a href="#" class="flecha-link ms-4" aria-label="Siguiente">&gt;&gt;</a>
+                </div>
+                
+                <h1 class="titulo-artistas-amarillo">ARTISTAS<br>RECOMENTADOS</h1>
+            </div>
+
+            <div class="col-lg-6 p-0 d-flex justify-content-center justify-content-lg-end">
+                <div class="bloque-botones-derecho">
+                    <a href="encuentra/tecnica.html" class="btn-rojo-menu">Técnica</a>
+                    <a href="encuentra/region.html" class="btn-rojo-menu">Región</a>
+                    <a href="encuentra/disponibilidad.html" class="btn-rojo-menu">Disponibilidad</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-franja">
+        <img src="imagenes/201.img.png" alt="Franja Tradicional" class="franja-img">
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

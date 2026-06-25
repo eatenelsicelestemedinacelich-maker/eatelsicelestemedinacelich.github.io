@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K'epi - Arte en Bolivia</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="misestilos_6.css">
+
+    <style>
+        html, body {
+            background-color: black !important;
+            color: white !important;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .logo-cabecera {
+            height: 55px;
+            width: auto;
+        }
+
+        .contenido-principal {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .seccion-visor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .visor-marco {
+            border: 2px solid #ffffff;
+            border-radius: 24px;
+            padding: 14px;
+            background-color: transparent;
+            max-width: 490px;
+            width: 100%;
+        }
+
+        .visor-img {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            display: block;
+        }
+
+        .flecha-link {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .flecha-link:hover {
+            color: #ffffff;
+            opacity: 0.7;
+        }
+
+        .bloque-derecho {
+            max-width: 460px;
+            width: 100%;
+        }
+
+        .texto-descripcion {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            text-align: justify;
+            margin-bottom: 3.5rem;
+            color: #ffffff;
+        }
+
+        .texto-bolivia {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 7.8rem;
+            font-weight: 400;
+            color: #f1ca1e;
+            letter-spacing: -2px;
+            line-height: 0.8;
+            margin: 0;
+            text-align: right;
+        }
+
+        .footer-franja {
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .franja-img {
+            width: 100%;
+            height: 42px;
+            display: block;
+            object-fit: fill;
+        }
+
+        @media (max-width: 991px) {
+            .bloque-derecho {
+                margin: 2rem auto 0 auto;
+            }
+            .texto-bolivia {
+                text-align: center;
+                font-size: 5.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black pt-4 pb-2">
+        <div class="container">
+            <!-- Logo K'epi -->
+            <a class="navbar-brand" href="index.html">
+                <img src="imagenes/200.img.jpg" alt="K'epi" class="logo-cabecera">
+            </a>
+
+            <div class="ms-auto">
+                <ul class="navbar-nav flex-row gap-4 text-uppercase" style="letter-spacing: 2px; font-size: 0.85rem;">
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-white" href="arte.html">Arte en Bolivia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="contactos.html">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contenido-principal container">
+        <div class="row w-100 align-items-center justify-content-center m-0">
+            
+            <div class="col-lg-6 p-0 mb-4 mb-lg-0">
+                <div class="seccion-visor">
+                    <a href="#" class="flecha-link me-4" aria-label="Anterior">&lt;&lt;</a>
+                    
+                    <div class="visor-marco">
+                        <img src="imagenes/102.jpg" alt="Cristo de la Concordia" class="visor-img">
+                    </div>
+                    
+                    <a href="#" class="flecha-link ms-4" aria-label="Siguiente">&gt;&gt;</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 p-0 d-flex justify-content-center justify-content-lg-end">
+                <div class="bloque-derecho">
+                    <p class="texto-descripcion">
+                        Desde las cumbres del Altiplano hasta el calor de los Llanos Orientales, el arte boliviano es tan diverso como su geografía. Tradición y modernidad se fusionan en las manos de creadores que transforman nuestra realidad en obras masterpieces. Explora cómo cada rincón de Bolivia inspira una forma única de ver el mundo.
+                    </p>
+                    
+                    <h1 class="texto-bolivia">BOLIVIA</h1>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="footer-franja">
+        <img src="imagenes/201.img.png" alt="Franja Tradicional" class="franja-img">
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
